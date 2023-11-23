@@ -1,0 +1,36 @@
+<section class="m-2">
+  <h2>Lista de Empresas</h2>
+  <a class="btn btn-primary" routerLink="/empresa-new">Novo</a>
+
+  @if (listaEmpresa.length > 0) {
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">Qtd. Funcionário</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(empresa of listaEmpresa; track empresa.id){
+      <tr>
+        <td>{{ empresa.id }}</td>
+        <td>{{ empresa.nome }}</td>
+        <td>{{ empresa.endereco }}</td>
+        <td>{{ empresa.telefone }}</td>
+        <td>{{ empresa.numeroFuncionario }}</td>
+        <td>
+          <button class="btn btn-primary m-2" routerLink="/empresa-edit/{{ empresa.id }}">Editar</button>
+          <button class="btn btn-secondary m-2" (click)="excluir(empresa.id)">Excluir</button>
+        </td>
+      </tr>
+      } @empty { }
+    </tbody>
+  </table>
+  } @else {
+  <p>Sem Registros...</p>
+  }
+</section>

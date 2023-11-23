@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "EurekaServerApplication",
+            "request": "launch",
+            "mainClass": "br.jus.tjms.eurekaserver.EurekaServerApplication",
+            "projectName": "eureka"
+        },
+        {
+            "type": "java",
+            "name": "EmpresaApplication",
+            "request": "launch",
+            "mainClass": "br.jus.tjms.empresa.EmpresaApplication"
+        },
+        {
+            "type": "java",
+            "name": "EmpresaApplication",
+            "request": "launch",
+            "mainClass": "br.jus.tjms.exemplo.EmpresaApplication"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "servicos/gateway"
+		},
+		{
+			"path": "servicos/funcionario"
+		},
+		{
+			"path": "servicos/empresa"
+		},
+		{
+			"path": "servicos/alvara"
+		},
+		{
+			"path": "servicos/service-registry"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "disabled",
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}

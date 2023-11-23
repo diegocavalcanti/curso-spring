@@ -1,0 +1,4 @@
+/services/alvara/target
+
+!**/src/test/**/target/
+servicos/service-registry/target/
